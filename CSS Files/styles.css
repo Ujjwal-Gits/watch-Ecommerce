@@ -1,0 +1,363 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cfd0c0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Decoration for Navigation Bar */
+nav {
+  background-color: #ebecd7;
+  padding: 10px;
+  box-shadow: 0 10px 10px rgba(39, 38, 36, 0.1);
+}
+html {
+  scroll-behavior: smooth;
+}
+.TopNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #e2d9bc;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px rgb(170, 181, 180);
+}
+
+.search input {
+  border: none;
+  background-color: #e2d9bc;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.Icons {
+  display: flex;
+  margin-right: 20px;
+  gap: 10px;
+}
+
+.Icons a {
+  color: #11095b;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  text-decoration: none;
+}
+
+.Icons a:hover {
+  box-shadow: 0 8px 16px #322f2f;
+}
+
+.NaviationBar {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.profile i {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ebecd7;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dropdown a {
+  color: rgb(10, 10, 10);
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown a:hover {
+  background-color: #cccd9f;
+}
+
+.profile:hover .dropdown {
+  display: block;
+}
+
+.cart i:hover {
+  cursor: pointer;
+  color: #464960;
+}
+
+/* Decoration For Hero Section */
+.hero-video-container {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  margin-top: 10px;
+}
+
+/* For Headings Titles */
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.heading {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* For Every Products Div in the Home Page*/
+.content-1 {
+  padding: 20px;
+}
+.content {
+  padding: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.row-1 {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  scroll-behavior: smooth;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+/* For Slider */
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+.slider-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+}
+.watch-image {
+  max-width: 100%;
+  max-height: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.watch-box p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  padding: 10px;
+  text-shadow: 0 2px 6px #79a7bb;
+}
+
+.watch-box {
+  background-color: #ebecd7;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.408);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.watch-box:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
+.add-to-cart-img {
+  width: 60%;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.add-to-cart-img:hover {
+  transform: translateY(-5px);
+}
+
+.watch-box h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #1e413a;
+  margin: 10px 0;
+}
+/* Black friday Sales Section */
+.offer {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+
+.offer-video {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Blog Section of the Home Page */
+.blog-post {
+  background-color: #ebecd7;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.408);
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
+.blog-image {
+  width: 40em;
+  height: auto;
+}
+/* Footer Section Styling is Here*/
+footer {
+  background-color: #ebecd7;
+  padding: 30px;
+  box-shadow: 0 -20px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2em;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20em;
+}
+
+.footer-container div {
+  flex: 1;
+}
+
+.newsletter h4,
+.contact-info h4,
+.social-media h4 {
+  color: #11095b;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #11095b;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #322f2f;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #000000;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+/* This is Styling for Every Protfolio */
+.Resume img {
+  width: 50%;
+  height: 900px;
+  margin-left: 400px;
+  margin-top: 20px;
+}
